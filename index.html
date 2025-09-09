@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,25 +12,30 @@
 <body class="bg-green-700">
 
   <!-- Navbar -->
-  <div class="navbar bg-green-700 text-white px-4">
-    <!-- Left Logo -->
-    <div class="flex-1">
-        <img src="plant.jpg" 
-         alt="Logo" class="w-8 h-8 rounded-full">
-      <a class="font-bold text-white text-lg">Green Earth</a>
-    </div>
+  <nav class="bg-green-700 text-white px-4 md:px-12 py-3">
+    <div class="flex justify-between items-center max-w-7xl mx-auto">
 
-    <!-- Desktop Menu -->
-    <div class="hidden md:flex flex-none space-x-6 items-center mx-auto">
-      <a href="#" class="hover:text-yellow-300">About</a>
-      <a href="#" class="hover:text-yellow-300">Gallery</a>
-      <a href="#" class="hover:text-yellow-300">Plant a Tree</a></div>
+      <!-- Left: Logo + Title -->
+      <div class="flex items-center gap-2">
+        <img src="plant.jpg" alt="logo" class="w-8 h-8 rounded-full bg-white p-1" />
+        <span class="text-lg md:text-xl font-semibold">Green Earth</span>
+      </div>
+
+      <!-- Center: Navigation Links (hidden on small screens) -->
+      <div class="hidden md:flex gap-6 text-white font-medium">
+        <a href="#" class="hover:text-yellow-300 transition">About</a>
+        <a href="#" class="hover:text-yellow-300 transition">Gallery</a>
+        <a href="#" class="hover:text-yellow-300 transition">Plant a Tree</a>
+      </div>
+
+      <!-- Right: Call to Action Button -->
       <div>
-      <button class="btn btn-sm bg-yellow-400 text-black font-semibold rounded-full hover:bg-yellow-500">
-        Plant a Tree
-      </button>
+        <button class="btn btn-sm bg-yellow-400 text-black hover:bg-yellow-300 rounded-full px-4">
+          Plant a Tree
+        </button>
+      </div>
     </div>
-
+  </nav>
     <!-- Mobile Menu Button -->
     <div class="md:hidden">
       <button id="menu-btn" class="btn btn-sm bg-yellow-400 text-black">Menu</button>
@@ -41,10 +47,9 @@
     <a href="#" class="hover:text-yellow-300">About</a>
     <a href="#" class="hover:text-yellow-300">Gallery</a>
     <a href="#" class="hover:text-yellow-300">Plant a Tree</a>
-    <button class="btn bg-yellow-400 text-black font-semibold rounded-full hover:bg-yellow-500">
-      Plant a Tree
-    </button>
+    
   </div>
+
 
   <!-- JavaScript for toggle -->
   <script>
@@ -84,11 +89,7 @@
     </div>
   </section>
   <!-- Optional JS  -->
-  <script>
-    document.querySelector("button").addEventListener("click", () => {
-      alert("Thank you for getting involved!");
-    });
-  </script>
+
   <section class="bg-green-50 text-gray-800">
 
   <div class="container mx-auto px-4 py-6">
