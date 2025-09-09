@@ -134,11 +134,9 @@
   <script>
     const trees = [
       { name: 'Mango Tree', price: 500, type: 'Fruit Tree' },
-      { name: 'Mango Tree', price: 500, type: 'Fruit Tree' },
-      { name: 'Mango Tree', price: 500, type: 'Fruit Tree' },
-      { name: 'Mango Tree', price: 500, type: 'Fruit Tree' },
-      { name: 'Mango Tree', price: 500, type: 'Fruit Tree' },
-      { name: 'Mango Tree', price: 500, type: 'Fruit Tree' },
+      { name: 'Guava Tree', price: 350, type: 'Fruit Tree' },
+      { name: 'Jackfruit Tree', price: 800, type: 'Fruit Tree' },
+      
     ];
 
     const cart = {};
@@ -166,6 +164,7 @@
     }
 
     function addToCart(name, price) {
+      alert("Adding your cart.");
       if (cart[name]) {
         cart[name].qty++;
       } else {
@@ -345,15 +344,10 @@
         alert("Please fill out all fields.");
         return;
       }
-
-      // Simulate success
       alert(`Thank you, ${name}! You've pledged to plant ${trees} tree(s). 🌱`);
-      
-      // Reset form
       this.reset();
     });
   </script>
-
 </div>
 </body>
 </html>
